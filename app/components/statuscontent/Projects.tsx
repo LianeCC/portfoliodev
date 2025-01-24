@@ -7,8 +7,22 @@ import { Code } from "lucide-react";
 const PROJECTS = [
     {
         Logo: Code,
-        title: "Projet 3",
-        description: "javascript",
+        title: "Javascript ",
+        description: "javascript et css",
+        nomUrl: "repo github",
+        url: "/projet-3",
+    },
+    {
+        Logo: Code,
+        title: "App web avec react",
+        description: "Utilisation de React, Sass",
+        nomUrl: "repo github",
+        url: "/projet-3",
+    },
+    {
+        Logo: Code,
+        title: "Back end avec Node.js",
+        description: "Utilisation de Node.js, Express et MongoDB",
         nomUrl: "repo github",
         url: "/projet-3",
     },
@@ -26,7 +40,7 @@ export const Projects = () => {
                     {PROJECTS.map((project, index) => (
                         <Accordion key={index} type="single" collapsible>
                             <AccordionItem value={`item-${index}`}>
-                                <AccordionTrigger>{project.title}</AccordionTrigger>
+                                <AccordionTrigger className="text-lg font-bold">{project.title}</AccordionTrigger>
                                 <AccordionContent>
                                     <Project {...project} />
                                 </AccordionContent>
@@ -46,7 +60,6 @@ const ProjectContent = (props: ProjectProps) => {
             <props.Logo size={16} />
             </span>
             <div>
-                <p className="text-lg font-semibold">{props.title}</p>
                 <p className="text-sm text-muted-foreground">{props.description}</p>
                 <a href={props.url} className="text-sm text-muted-foreground">
                     {props.nomUrl}

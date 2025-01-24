@@ -1,7 +1,7 @@
 import { SectionComponent } from "./Section";
-import { Projects } from "./maincontent/Projects";
-import { Formations } from "./maincontent/Education";
-import { Experiences } from "./maincontent/WorkExperience";
+import { Projects } from "./statuscontent/Projects";
+import { Formations } from "./statuscontent/Education";
+import { Experiences } from "./statuscontent/WorkExperience";
 
 export const Status = () => {
     return (
