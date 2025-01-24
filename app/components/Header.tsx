@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
-import { Section } from "./Section";
+import { SectionComponent } from "./Section";
 import { GithubIcon } from "./icons/GithubIcon";
 import { cn } from "@/lib/utils";
 
@@ -23,7 +23,7 @@ export const Header = () => {
 
     return (
         <header className={cn("sticky top-0 py-5 backdrop-blur-lg z-10 transition-colors duration-100", isScrolled ? "bg-primary/40" : "bg-primary/10")}>
-            <Section className="flex items-baseline">
+            <SectionComponent className="flex items-baseline">
                 <h1 className="text-4xl text-foreground">
                     LC²
                 </h1>
@@ -39,7 +39,7 @@ export const Header = () => {
                         <GithubIcon size={16} className="text-foreground" />
                     </Link>
                 </ul>
-            </Section>
+            </SectionComponent>
         </header>
     );
 };
