@@ -1,12 +1,12 @@
 import { LucideIcon } from "lucide-react";
 
+
 export type ProjectProps = {
-    Logo: LucideIcon;
     title: string;
-    subtitle: string;
     description: string;
-    nomUrl: string;
     url: string;
+    urlGithub: string;
+    image: string;
 };
 
 export type FormationProps = {
@@ -15,4 +15,12 @@ export type FormationProps = {
     description: string;
     date: string;
     url: string;
+};
+
+
+export type ExperienceProps = {
+    Logo: LucideIcon;
+    title: string;
+    description: string;
+    date: string;
 };

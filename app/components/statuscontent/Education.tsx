@@ -1,17 +1,23 @@
 import { Card } from "@/components/ui/card";
 import dynamic from "next/dynamic";
 import { FormationProps } from "./types";
-import { Code } from "lucide-react";
 
 const FORMATIONS = [
     {
-        Logo : Code,
+        Logo : "/logos/logoOpenclassrooms.png",
         title: "Développeur Web",
         description: "OpenClassrooms",
         date: "février 2025",
-        url: "/formation-1",
+        url: "https://openclassrooms.com/fr/paths/899-developpeur-web",
     },
-    // Ajoute plus de formations ici
+    {
+        Logo : "/logos/logoIAE.png",
+        title: "MSc Marketing & Management des services",
+        description: "IAE d'Aix en Provence",
+        date: "septembre 2016",
+        url: "https://iae-aix.univ-amu.fr/fr/programmes/organisation-msc/msc2/msc-2-management-specialisation-management-marketing-services",
+    },
+    // plus de formations ici
 ];
 
 export const Formations = () => {
@@ -31,11 +37,11 @@ export const Formations = () => {
 
 const FormationContent = (props: FormationProps) => {
     return (
-        <a href={props.url} className="inline-flex items-center gap-4 hover:bg-accent/20 transition-colors p-2 rounded">
-            <span className="bg-accent text-accent-foreground p-4 rounded-sm">
-            <props.Logo size={16} />
+        <a href={props.url} target="_blank" className="inline-flex items-center gap-4 hover:bg-accent/20 transition-colors p-2 rounded">
+            <span className="bg-accent text-accent-foreground rounded-sm">
+                <img src={props.Logo} alt={props.title} className="w-14 h-14" />
             </span>
-            <div>
+            <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[350px]">
                 <p className="text-lg font-semibold">{props.title}</p>
                 <p className="text-sm text-muted-foreground">{props.description}</p>
                 <p className="text-sm text-muted-foreground">{props.date}</p>

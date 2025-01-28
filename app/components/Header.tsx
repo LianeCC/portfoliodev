@@ -6,6 +6,7 @@ import Link from "next/link";
 import { SectionComponent } from "./Section";
 import { GithubIcon } from "./icons/GithubIcon";
 import { cn } from "@/lib/utils";
+import { LinkedinIcon } from "./icons/LinkedinIcon";
 
 export const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -29,14 +30,11 @@ export const Header = () => {
                 </h1>
                 <div className="flex-1" />
                 <ul className="flex items-center gap-5">
-                    <Link href="https://github.com/lianecc" className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
+                    <Link href="https://github.com/lianecc" className={cn(buttonVariants({variant: "outline"}), "size-8 p-0")}>
                         <GithubIcon size={16} className="text-foreground" />
                     </Link>
-                    <Link href="https://github.com/lianecc" className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
-                        <GithubIcon size={16} className="text-foreground" />
-                    </Link>
-                    <Link href="https://github.com/lianecc" className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
-                        <GithubIcon size={16} className="text-foreground" />
+                    <Link href="https://www.linkedin.com/in/liane-coupat-candoulives-4311a894/" className={cn(buttonVariants({variant: "outline"}), "size-8 p-0")}>
+                        <LinkedinIcon size={16} className="text-foreground" />
                     </Link>
                 </ul>
             </SectionComponent>

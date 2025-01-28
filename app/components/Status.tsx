@@ -5,9 +5,9 @@ import { Experiences } from "./statuscontent/WorkExperience";
 
 export const Status = () => {
     return (
-        <SectionComponent className="flex flex-col gap-6">
+        <SectionComponent className="flex flex-col gap-10">
             <Projects />
-            <div className="flex flex-wrap gap-6 w-full">
+            <div className="flex flex-wrap gap-10 w-full">
                 <Formations />
                 <Experiences />
             </div>
