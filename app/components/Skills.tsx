@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SectionComponent } from "./Section"
 
 const skills = [
@@ -35,7 +36,7 @@ export const Skill = () => {
                 {skills.map((skill, index) => (
                     <div key={index} className="flex flex-col items-center text-center w-24">
                         <div className="w-20 h-20 rounded-full bg-gray-200 flex items-center justify-center mb-2 overflow-hidden">
-                            <img
+                            <Image
                                 src={skill.icon}
                                 alt={skill.name}
                                 className="rounded-full w-full h-full object-contain transform transition-transform duration-300 hover:scale-110"

@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 import Link from "next/link";
 
 const PROJECTS = [
@@ -37,7 +38,7 @@ export const Projects = () => {
                     {PROJECTS.map((project, index) => (
                         <div key={index} className="flex flex-col gap-3">
                             <Link href={project.url} target="_blank" className="group relative w-full max-h-[300px] overflow-hidden rounded-lg">
-                                <img 
+                                <Image 
                                     src={project.image} 
                                     alt={project.title} 
                                     className="w-full h-full object-cover object-top transition-transform duration-500 ease-in-out group-hover:scale-110"
