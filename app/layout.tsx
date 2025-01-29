@@ -1,16 +1,14 @@
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Anek_Telugu } from "next/font/google";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
+import { GeistProvider, CssBaseline } from "@geist-ui/react"; // Correct import for Geist UI
 
 import "./globals.css";
 
-
-const AnekTelugu = Anek_Telugu ({ subsets: ["latin"], 
+const AnekTelugu = Anek_Telugu({
+  subsets: ["latin"],
   variable: "--font-caption",
- });
-
+});
 
 export const metadata: Metadata = {
   title: "Liane COUPAT CANDOULIVES - Web Developer",
@@ -24,8 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
-      <body className={cn(GeistSans.variable, GeistMono.variable, AnekTelugu.variable, "font-sans h-full bg-background text-foreground")}>
-        {children}
+      <body className={cn(AnekTelugu.variable, "font-sans h-full bg-background text-foreground")}>
+        <GeistProvider>
+          <CssBaseline />
+          {children}
+        </GeistProvider>
       </body>
     </html>
   );
