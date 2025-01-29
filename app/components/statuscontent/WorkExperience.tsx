@@ -1,4 +1,3 @@
-import React from "react";
 import { Card } from "@/components/ui/card";
 import dynamic from "next/dynamic";
 import { ExperienceProps } from "./types";
@@ -46,7 +45,13 @@ const ExperienceContent = (props: ExperienceProps) => {
     return (
         <div className="flex items-center gap-4">
             <div className="bg-white text-accent-foreground rounded-sm w-16 h-16 flex justify-center items-center overflow-hidden">
-                <Image src={props.Logo} alt={props.title} className="object-contain w-full h-full" />
+                <Image 
+                src={props.Logo} 
+                alt={props.title} 
+                className="object-contain w-full h-full" 
+                width={64}
+                height={64}
+                />
             </div>
             <div className="w-full sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[350px]">
                 <p className="text-lg font-semibold">{props.title}</p>

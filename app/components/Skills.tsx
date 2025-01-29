@@ -40,7 +40,9 @@ export const Skill = () => {
                                 src={skill.icon}
                                 alt={skill.name}
                                 className="rounded-full w-full h-full object-contain transform transition-transform duration-300 hover:scale-110"
-                            />
+                                width={80}
+                                height={80}
+                           />
                         </div>
                         <p className="text-lg">{skill.name}</p>
                     </div>

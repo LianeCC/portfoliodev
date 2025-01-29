@@ -42,6 +42,8 @@ export const Projects = () => {
                                     src={project.image} 
                                     alt={project.title} 
                                     className="w-full h-full object-cover object-top transition-transform duration-500 ease-in-out group-hover:scale-110"
+                                    width={800}
+                                    height={600}
                                 />
                             </Link>
                             <div className="mt-2">
