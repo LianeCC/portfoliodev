@@ -11,6 +11,13 @@ const FORMATIONS = [
         url: "https://openclassrooms.com/fr/paths/899-developpeur-web",
     },
     {
+        Logo : "/logos/logoOpenclassrooms.png",
+        title: "Autodidacte",
+        description: "En perpétuel apprentissage",
+        date: "depuis 2017",
+        url: "https://openclassrooms.com",
+    },
+    {
         Logo : "/logos/logoIAE.png",
         title: "MSc Marketing & Management des services",
         description: "IAE d'Aix en Provence",

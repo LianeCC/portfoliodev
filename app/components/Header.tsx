@@ -30,10 +30,10 @@ export const Header = () => {
                 </h1>
                 <div className="flex-1" />
                 <ul className="flex items-center gap-5">
-                    <Link href="https://github.com/lianecc" className={cn(buttonVariants({variant: "outline"}), "size-8 p-0")}>
+                    <Link href="https://github.com/lianecc" target="_blank" className={cn(buttonVariants({variant: "outline"}), "size-8 p-0")}>
                         <GithubIcon size={16} className="text-foreground" />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/liane-coupat-candoulives-4311a894/" className={cn(buttonVariants({variant: "outline"}), "size-8 p-0")}>
+                    <Link href="https://www.linkedin.com/in/liane-coupat-candoulives-4311a894/" target="_blank" className={cn(buttonVariants({variant: "outline"}), "size-8 p-0")}>
                         <LinkedinIcon size={16} className="text-foreground" />
                     </Link>
                 </ul>

@@ -1,10 +1,8 @@
 import { Card } from "@/components/ui/card";
-import { VercelIcon } from "../icons/VercelIcon";
 import Link from "next/link";
 
 const PROJECTS = [
     {
-        Logo: VercelIcon,
         title: "Javascript",
         description: "Création d'un site web - utilisation de Javascript, gestion des évènements utilisateurs et manipulation des éléments du DOM.",
         url: "https://projet3-omega.vercel.app/",
@@ -12,7 +10,6 @@ const PROJECTS = [
         image: "https://api.apiflash.com/v1/urltoimage?access_key=0a2809377e1c4f0688271bc53b68a52f&url=https://projet3-omega.vercel.app/&format=png&full_page=true",
     },
     {
-        Logo: VercelIcon,
         title: "App web avec react",
         description: "Implémentation du front-end d'une application avec React et React router - Configuration de la navigation, développement de composants React, utilisation de Sass, animations CSS",
         url: "https://projet5-eight.vercel.app/",
@@ -21,7 +18,6 @@ const PROJECTS = [
 
     },
     {
-        Logo: VercelIcon,
         title: "Back end avec Node.js",
         description: "Création d'un serveur avec Express et connexion à la base de données MongoDB - Création d'une API RESTful, stockage de données sécurisé, gestion des utilisateurs et des droits.",
         url: "https://projet6-eight.vercel.app/",
@@ -36,7 +32,7 @@ export const Projects = () => {
     return (
         <div className="w-full border-none">
             <Card className="w-full p-4 flex flex-col gap-4">
-            <h2 className="font-caption text-4xl text-primary py-4">Projects</h2>
+            <h2 className="font-caption text-4xl text-primary py-4">Projets</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                     {PROJECTS.map((project, index) => (
                         <div key={index} className="flex flex-col gap-3">

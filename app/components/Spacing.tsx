@@ -5,8 +5,8 @@ export type SpacingProps = {
 
 export const Spacing = ({size = "md"}: SpacingProps) => {
     return <div className={cn({
-        "h-8 lg:h-16": size === "sm",
-        "h-16 lg:h-24": size === "md",
-        "h-24 lg:h-32": size === "lg",
+        "h-10 lg:h-20": size === "sm",
+        "h-20 lg:h-40": size === "md",
+        "h-30 lg:h-60": size === "lg",
     })} />;
 }; 
