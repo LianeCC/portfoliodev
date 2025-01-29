@@ -30,7 +30,7 @@ const skills = [
 export const Skill = () => {
     return (
         <SectionComponent className="flex flex-col items-center gap-6">
-            <h2 className="font-caption text-4xl text-primary">Compétences</h2>
+            <h2 className="font-caption text-4xl text-primary">Langages & Outils</h2>
             <div className="flex flex-wrap justify-center gap-8">
                 {skills.map((skill, index) => (
                     <div key={index} className="flex flex-col items-center text-center w-24">

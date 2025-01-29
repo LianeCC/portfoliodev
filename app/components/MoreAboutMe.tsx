@@ -2,6 +2,8 @@ import { SectionComponent } from "./Section"
 import Link from "next/link";
 import { ComponentPropsWithoutRef } from "react";
 import { cn } from "@/lib/utils"
+import { Formations } from "./statuscontent/Education";
+import { Experiences } from "./statuscontent/WorkExperience";
 
 export const Code = ({ className,...props }: ComponentPropsWithoutRef<"span">) => {
     return (
@@ -24,5 +26,9 @@ export const MoreAboutMe = () => {
                 <img src="/images/Liane-HD.jpg" className="w-full h-auto rounded-full max-w-xs max-md:w-56" alt="lianecc's picture"/>
             </div>
         </div>
+        <div className="pt-[50px] flex flex-wrap gap-10 w-full">
+                <Formations />
+                <Experiences />
+            </div>
     </SectionComponent>
 }
