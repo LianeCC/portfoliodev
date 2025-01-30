@@ -5,11 +5,11 @@ import { Status } from "./components/Status";
 import { MoreAboutMe } from "./components/MoreAboutMe";
 import { Footer } from "./components/Footer";
 import { Skill } from "./components/Skills";
-import RootLayout from "./layout"; 
+import RootLayout from "./layout";
 
 export default function Home() {
   return (
-    <RootLayout>
+      <RootLayout>
       <main>
         <Header />
         <Spacing size="sm" />
@@ -23,6 +23,6 @@ export default function Home() {
         <Spacing size="md" />
         <Footer />
       </main>
-    </RootLayout>
+      </RootLayout>
   );
 }
