@@ -20,8 +20,10 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className={cn(AnekTelugu.variable, "font-sans h-full bg-background text-foreground")}>
-      {children}
-    </div>
+    <html lang="en">
+      <body className={cn(AnekTelugu.variable, "font-sans h-full bg-background text-foreground")}>
+        {children}
+      </body>
+    </html>
   );
 }
