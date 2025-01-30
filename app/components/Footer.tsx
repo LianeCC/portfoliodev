@@ -25,7 +25,7 @@ export const Footer = () => {
     <footer className="py-8">
       <div className="max-w-3xl mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center mb-4 p-4">Contact</h2>
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8 mx-auto">
           <button
             onClick={handleCopy}
             className="flex bg-primary/50 text-white px-4 py-2 rounded-md hover:bg-primary/80 transition flex items-center gap-2"
@@ -72,7 +72,7 @@ export const Footer = () => {
         <div className="p-12 text-center">
           <p>Ce site a été réalisé à la main et ne collecte aucunes données. Vous pouvez trouver le code source sur <Link href="https://github.com/LianeCC/portfoliodev"><Code>GitHub</Code></Link>. Merci de votre visite, passez une bonne journée ! 👋</p>
           <br/>
-          <p>Développé avec Next et hébergé sur Vercel.</p>
+          <p>Développé avec amour et Next, hébergé sur Vercel.</p>
         </div>
       </div>
     </footer>
