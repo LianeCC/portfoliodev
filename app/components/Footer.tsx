@@ -69,10 +69,10 @@ export const Footer = () => {
             </div>
           </form>
         </div>
-        <div className="p-12 text-center">
+        <div className="pt-10 text-center">
           <p>Ce site a été réalisé à la main et ne collecte aucunes données. Vous pouvez trouver le code source sur <Link href="https://github.com/LianeCC/portfoliodev"><Code>GitHub</Code></Link>. Merci de votre visite, passez une bonne journée ! 👋</p>
           <br/>
-          <p>Développé avec amour et Next, hébergé sur Vercel.</p>
+          <p>Développé avec <span className="line-through">amour</span> Next, hébergé sur Vercel.</p>
         </div>
       </div>
     </footer>
