@@ -4,6 +4,8 @@ export type ProjectProps = {
     url: string;
     urlGithub: string;
     image: string;
+    difficulte: string;
+    solution: string;
 };
 export type FormationProps = {
     Image: string;
